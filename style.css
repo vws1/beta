@@ -535,20 +535,20 @@ div label[for=ui-component-toggle__yearly] {
 
 /* AMOUNT */
 
-.ui-component-card--pricing-amount-1::before { content: "$50"; }
+.ui-component-card--pricing-amount-1::before { content: "$89"; }
 
 #ui-component-toggle__yearly:checked ~ div
-.ui-component-card--pricing-amount-1::before { content: "$500"; }
+.ui-component-card--pricing-amount-1::before { content: "$169"; }
 
-.ui-component-card--pricing-amount-2::before { content: "$250"; }
-
-#ui-component-toggle__yearly:checked ~ div
-.ui-component-card--pricing-amount-2::before { content: "$2,500"; }
-
-.ui-component-card--pricing-amount-3::before { content: "$1,000"; }
+.ui-component-card--pricing-amount-2::before { content: "$399"; }
 
 #ui-component-toggle__yearly:checked ~ div
-.ui-component-card--pricing-amount-3::before { content: "$10,000"; }
+.ui-component-card--pricing-amount-2::before { content: "$699"; }
+
+.ui-component-card--pricing-amount-3::before { content: "$799"; }
+
+#ui-component-toggle__yearly:checked ~ div
+.ui-component-card--pricing-amount-3::before { content: "$1,399"; }
 
 /* TYPE */
 
