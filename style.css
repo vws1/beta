@@ -535,12 +535,12 @@ div label[for=ui-component-toggle__yearly] {
 
 /* AMOUNT */
 
-.ui-component-card--pricing-amount-1::before { content: "$89"; }
+.ui-component-card--pricing-amount-1::before { content: "$ 89"; }
 
 #ui-component-toggle__yearly:checked ~ div
-.ui-component-card--pricing-amount-1::before { content: "$169"; }
+.ui-component-card--pricing-amount-1::before { content: "$ 179"; }
 
-.ui-component-card--pricing-amount-2::before { content: "$399"; }
+.ui-component-card--pricing-amount-2::before { content: "$ 169"; }
 
 #ui-component-toggle__yearly:checked ~ div
 .ui-component-card--pricing-amount-2::before { content: "$699"; }
@@ -550,39 +550,6 @@ div label[for=ui-component-toggle__yearly] {
 #ui-component-toggle__yearly:checked ~ div
 .ui-component-card--pricing-amount-3::before { content: "$1,399"; }
 
-/* TYPE */
-
-.ui-10::before { content: "Best for up to 25 customers"; }
-
-#ui-component-toggle__yearly:checked ~ div
-.ui-10::before { content: "Best for unlimited customers"; }
-
-.ui-20::before { content: "Best for up to 25 customers"; }
-
-#ui-component-toggle__yearly:checked ~ div
-.ui-20::before { content: "Best for unlimited customers"; }
-
-.ui-30::before { content: "Best for up to 25 customers"; }
-
-#ui-component-toggle__yearly:checked ~ div
-.ui-30::before { content: "Best for unlimited customers"; }
-
-/* Off Retail */
-
-.ui-11::before { content: "up to 20% off retail"; }
-
-#ui-component-toggle__yearly:checked ~ div
-.ui-11::before { content: "up to 40% off retail"; }
-
-.ui-21::before { content: "up to 20% off retail"; }
-
-#ui-component-toggle__yearly:checked ~ div
-.ui-21::before { content: "up to 40% off retail"; }
-
-.ui-31::before { content: "up to 20% off retail"; }
-
-#ui-component-toggle__yearly:checked ~ div
-.ui-31::before { content: "up to 40% off retail"; }
 
 /* LIST */
 
