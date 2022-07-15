@@ -28,13 +28,11 @@
     <title>Vanilla Web Services (VWS) - Reseller Program of Domains, Hosting, Emails & More.</title>
   </head>
   <body>
-  
-      <script>
+<script>
   window.SnipcartSettings = {
-    publicApiKey: "S_Mzc4YmM0YjAtYWI1Zi00YTVkLWJiZWYtODI0ZDc2MzBkZjAwNjM3OTM0NzAwMDkxNDg3MTY2",
-    loadStrategy: "on-user-interaction",
-    modalStyle: "side",
-    version: "3.3.0"
+    publicApiKey: "ZjZiNjlmMmMtYjZlMC00MGI5LWI1ZDAtOTEyM2Q5YjZjYTdlNjM3OTM0Njk4MTQ4ODg1NDA3",
+	loadStrategy: "on-user-interaction",
+	version: "3.3.0"
   };
 
   (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).currency)!=null||(s.currency="usd");var l,p;(p=(l=window.SnipcartSettings).timeoutDuration)!=null||(l.timeoutDuration=2750);var w,u;(u=(w=window.SnipcartSettings).domain)!=null||(w.domain="cdn.snipcart.com");var m,g;(g=(m=window.SnipcartSettings).protocol)!=null||(m.protocol="https");var f,v;(v=(f=window.SnipcartSettings).loadCSS)!=null||(f.loadCSS=!0);var E=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,y=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(y.forEach(function(t){return document.addEventListener(t,o)}),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],n=document.querySelector("#snipcart"),i=document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][src$="snipcart.js"]')),e=document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][href$="snipcart.css"]'));n||(n=document.createElement("div"),n.id="snipcart",n.setAttribute("hidden","true"),document.body.appendChild(n)),$(n),i||(i=document.createElement("script"),i.src="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),i.async=!0,t.appendChild(i)),!e&&window.SnipcartSettings.loadCSS&&(e=document.createElement("link"),e.rel="stylesheet",e.type="text/css",e.href="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(e)),y.forEach(function(h){return document.removeEventListener(h,o)})}function $(t){!E||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
@@ -56,7 +54,7 @@
           <nav role="navigation" class="ui-section-header--nav ui-layout-flex">
             <a href="#storefront" role="link" aria-label="#" class="ui-section-header--nav-link">Storefront</a>
             <a href="#pricing" role="link" aria-label="#" class="ui-section-header--nav-link">Pricing</a>
-            <a href="#contact" role="link" aria-label="#" class="ui-section-header--nav-link">Contact</a>
+            <a href="#cart" role="link" aria-label="#" class="ui-section-header--nav-link snipcart-checkout"><span class="snipcart-total-price"></span></a>
           </nav>
         </div>
       </div>
@@ -117,78 +115,58 @@
         <div class="ui-layout-container">
           <h2>Fair Prices</h2>
           <p class="ui-text-intro">Up to 40% off retail.</p>
-          <!-- TOGGLE -->
-          <input type="radio" name="toggle" id="ui-component-toggle__monthly" checked>
-          <input type="radio" name="toggle" id="ui-component-toggle__yearly">
-          <div class="ui-component-toggle ui-layout-flex">
-            <label for="ui-component-toggle__monthly" class="ui-component-toggle--label">Basic</label>
-            <label for="ui-component-toggle__yearly" class="ui-component-toggle--label">Pro</label>
-          </div>
+		  <br>
           <!-- PRICING -->
-          <div class="ui-section-pricing__layout ui-layout-grid ui-layout-grid-3">
+          <div class="ui-section-pricing__layout ui-layout-grid ui-layout-grid-2">
             <div class="ui-component-card ui-component-card--pricing">
-              <span><strong>1 Year</strong></span>
+              <span><strong>Basic Reseller</strong></span>
               <!-- AMOUNT -->
               <div class="ui-component-card--pricing-price">
-                <span class="ui-component-card--pricing-amount ui-component-card--pricing-amount-1"></span>
+                <span class="ui-component-card--pricing-amount ui-component-card--pricing-amount-1">/yr</span>
                 
               </div>
-              <span><small class="ui-10"></small></span>
+              <span><small>Best for up to 25 customers</small></span>
               <!-- LIST -->
               <ul class="ui-component-list ui-component-list--pricing ui-layout-grid">
                 <li class="ui-component-list--item ui-component-list--item-check">White-label storefront</li>
                 <li class="ui-component-list--item ui-component-list--item-check">Credit card processing</li>
                 <li class="ui-component-list--item ui-component-list--item-check">24/7 support</li>
                 <li class="ui-component-list--item ui-component-list--item-check">Sales report</li>
-                <li class="ui-component-list--item ui-component-list--item-check ui-11"></li>
+                <li class="ui-component-list--item ui-component-list--item-check">Up to 20% off retail.</li>
               </ul>
               <!-- CTA -->
-<button class="snipcart-add-item"
-  data-item-id="starry-night"
-  data-item-price="79.99"
-  data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
-  data-item-image="/assets/images/starry-night.jpg"
-  data-item-name="The Starry Night">
-  Add to cart
-</button>
+			  <a href="#" class="ui-component-button ui-component-button-big ui-component-button-primary snipcart-add-item" role="link" aria-label="#"
+				data-item-id="basic-reseller"
+				data-item-price="89"
+				data-item-description="Best for up to 25 customers."
+				data-item-name="Basic Reseller"
+				data-item-custom1-name="Period"
+				data-item-custom1-options="1 year|5 years[+310]|10 years[+710]">Add to cart</a>
             </div>
             <div class="ui-component-card ui-component-card--pricing">
-              <span><strong>5 Years</strong></span>
+              <span><strong>Pro Reseller</strong></span>
               <!-- AMOUNT -->
               <div class="ui-component-card--pricing-price">
-                <span class="ui-component-card--pricing-amount ui-component-card--pricing-amount-2"></span>
+                <span class="ui-component-card--pricing-amount ui-component-card--pricing-amount-2">/yr</span>
                 
               </div>
-              <span><small class="ui-20"></small></span>
+              <span><small>Best for unlimited customers</small></span>
               <!-- LIST -->
               <ul class="ui-component-list ui-component-list--pricing ui-layout-grid">
                 <li class="ui-component-list--item ui-component-list--item-check">White-label storefront</li>
                 <li class="ui-component-list--item ui-component-list--item-check">Credit card processing</li>
                 <li class="ui-component-list--item ui-component-list--item-check">24/7 support</li>
                 <li class="ui-component-list--item ui-component-list--item-check">Sales report</li>
-                <li class="ui-component-list--item ui-component-list--item-check ui-21"></li>
+                <li class="ui-component-list--item ui-component-list--item-check">Up to 40% off retail.</li>
               </ul>
               <!-- CTA -->
-              <a href="#" class="ui-component-button ui-component-button-big ui-component-button-primary" role="link" aria-label="#">Add to cart</a>
-            </div>
-            <div class="ui-component-card ui-component-card--pricing">
-              <span><strong>10 Years</strong></span>
-              <!-- AMOUNT -->
-              <div class="ui-component-card--pricing-price">
-                <span class="ui-component-card--pricing-amount ui-component-card--pricing-amount-3"></span>
-                
-              </div>
-              <span><small class="ui-20"></small></span>
-              <!-- LIST -->
-              <ul class="ui-component-list ui-component-list--pricing ui-layout-grid">
-                <li class="ui-component-list--item ui-component-list--item-check">White-label storefront</li>
-                <li class="ui-component-list--item ui-component-list--item-check">Credit card processing</li>
-                <li class="ui-component-list--item ui-component-list--item-check">24/7 support</li>
-                <li class="ui-component-list--item ui-component-list--item-check">Sales report</li>
-                <li class="ui-component-list--item ui-component-list--item-check ui-31"></li>
-              </ul>
-              <!-- CTA -->
-              <a href="#" class="ui-component-button ui-component-button-big ui-component-button-secondary" role="link" aria-label="#">Add to cart</a>
+              <a href="#" class="ui-component-button ui-component-button-big ui-component-button-secondary snipcart-add-item" role="link" aria-label="#"
+				data-item-id="pro-reseller"
+				data-item-price="169"
+				data-item-description="Best for unlimited customers."
+				data-item-name="Pro Reseller"
+				data-item-custom1-name="Period"
+				data-item-custom1-options="1 year|5 years[+530]|10 years[+1230]">Add to cart</a>
             </div>
           </div>
         </div>
