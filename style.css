@@ -220,7 +220,7 @@ svg {
 
 .ui-layout-flex,
 .ui-layout-grid {
-  align-items: center;
+  align-items: left;
   justify-content: center;
 }
 
@@ -453,7 +453,7 @@ div label[for=ui-component-toggle__yearly] {
   text-align: center;
 }
 
-.ui-section-hero__layout { row-gap: var(--ui-gap-hero); }
+.ui-section-hero__layout { text-align: left; row-gap: var(--ui-gap-hero); }
 
 /*--------------------------------------------------------------
 |
